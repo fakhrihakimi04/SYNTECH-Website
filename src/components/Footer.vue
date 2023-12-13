@@ -34,13 +34,13 @@
           <h4>Learn More</h4>
           <li><a href="#">Home</a></li>
           <li><a href="#">Event</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Want to Learn?</a></li>
         </div>
 
         <div class="custom-footer-content">
           <h4>Contact Us</h4>
-          <li><a href="#">Secretary</a></li>
+          <li><a href="mailto:mohammad_22000317@utp.edu.my">Secretary</a></li>
           <li><a href="#">Room</a></li>
         </div>
         <div class="custom-footer-content">
