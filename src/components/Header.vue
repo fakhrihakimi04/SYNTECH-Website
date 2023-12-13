@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div>
     <nav
       class="navbar is-full"
       role="navigation"
       aria-label="main navigation"
-      style="background-color: #fff8f8"
+      style="background-color: #fff8f8; margin: 0%; padding: 0%;"
     >
       <div class="navbar-brand">
         <div>
@@ -38,15 +38,15 @@
           </div>
 
           <div class="navbar-item is-hoverable">
-            <a class="navbar-item"> Events </a>
+            <a class="navbar-item" > Events </a>
           </div>
 
           <div class="navbar-item is-hoverable">
-            <a class="navbar-item"> Blog </a>
+            <a class="navbar-item" href="../mentormain.html"> Blog </a>
           </div>
 
           <div class="navbar-item is-hoverable">
-            <a class="navbar-item"> About Us </a>
+            <a class="navbar-item" href="../about.html"> About Us </a>
           </div>
         </div>
       </div>

@@ -32,16 +32,16 @@
 
         <div class="custom-footer-content">
           <h4>Learn More</h4>
-          <li><a href="#">Home</a></li>
+          <li><a href="app.vue">Home</a></li>
           <li><a href="#">Event</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="mentormain.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
         </div>
 
         <div class="custom-footer-content">
           <h4>Contact Us</h4>
-          <li><a href="mailto:mohammad_22000317@utp.edu.my">Secretary</a></li>
-          <li><a href="#">Room</a></li>
+          <li><a href="mailto:afiqa_22001936@utp.edu.my">Secretary</a></li>
+          <li><a>Room: 02-02-03</a></li>
         </div>
         <div class="custom-footer-content">
           <h4>Social</h4>

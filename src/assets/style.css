@@ -1,0 +1,332 @@
+@import "./css/bulma.css";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('./fonts/static/') format('truetype');
+  }
+.contact {
+	position: relative;
+	margin: auto auto;
+	border-radius: 10px;
+	text-align: center;
+	width: 75%; 
+	max-width:700px;
+	height: 72%; 
+	border-radius: 10px; 
+	text-align: center;
+	box-shadow: 
+		4px 4px 5px rgba(0, 0, 0, 0.1), /* Lighter shadow at top left */
+		6px 6px 30px rgba(0, 0, 0, 0.1); /* Darker shadow at bottom right */ /* Add light shadow */
+	background: #FCFBF4;
+}
+
+/* Default styles for the input box */
+input {
+	padding: 10px;
+	border:2.3px solid #58BC8260;
+	border-radius: 5px;
+	transition: border-color 0.3s; 
+	width:100%;
+	height:35px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border-radius:5px;
+	resize:none;
+}
+
+/* Styles for the input box when it is focused (active) */
+input:active {
+	border: 2px solid #06768d90; /* Change the border color when the input is focused */
+}
+.followUsButton{
+	align-items: center;
+	appearance: none;
+	background: linear-gradient(60deg, #f9ce34, #ee2a7b , #6228d7,	#962fbf);
+	border-radius: 4px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-flex;
+	height: 60px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 18px;
+	display: flex;
+	width:150px;
+	height:40px;
+	overflow: hidden;
+	border-radius:10px;
+}
+.followUsButton:focus {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+}
+
+.followUsButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+  transform: translateY(-2px);
+}
+
+.followUsButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.contactForm {
+	text-align: left;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.contactForm label {
+	display: block;
+	margin-top: 10px;
+}
+
+/* Set fixed size for textarea */
+.contactForm textarea {
+	width: 100%;
+	max-width:420px;
+	height: 150px; /* Adjust the height as needed */
+	resize: none;  /* Disable textarea resizing */
+	border-radius:5px;
+	padding:5px;
+	text-align:left;
+	border:2.3px solid #58BC8260;
+}
+
+
+.contactForm button {
+	align-items: center;
+	appearance: none;
+	background: linear-gradient(60deg, #2AF598, #22E4AC, #1BD7BB, #14C9CB);
+	border-radius: 4px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-flex;
+	height: 60px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 25px;
+	display: flex;
+	width:150px;
+	height:50px;
+	overflow: hidden;
+	border-radius:10px;
+}
+.contactForm button:focus {
+  box-shadow:rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+}
+
+.contactForm button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0.5px 4px;
+  transform: translateY(-2px);
+}
+
+.contactForm button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.slides {
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	scroll-snap-align: start;
+	background-size:cover;
+}
+
+.slide1{
+	scroll-snap-align:start;
+	padding-top: 90px;
+	padding-left: 50px;
+	background: #58BC8240;
+	filter: brightness(0.8);
+}
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+	background: #FCFBF4;
+	background-size:cover;
+	filter: brightness(1.0);
+}
+.slide6{
+	background: #58BC8240;
+	background-size:cover;
+}
+
+.slides img {
+	width: 450px;
+}
+
+.slides h2 {
+	font-size:70px;
+	font-weight: bold;
+	max-width: 650px;
+	white-space: nowrap;
+	color: #002661;
+	text-shadow: 1px 1px 4px #22E4AC80;
+}
+
+.slides h3 {
+	padding-top: 40px;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: 2px;
+	line-height: 75%;
+	color: black;
+}
+.slides h4{
+	margin-top: 5px;
+	font-weight: 900;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 75%;
+	color: #878787;
+}
+.slides p{
+	padding-top: 20px;
+	width: 100%;
+	line-height: 150%;
+	letter-spacing: 2px;
+	color: #D2D2D2;
+}
+
+::-webkit-scrollbar{
+	height:8px;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(255, 255, 255, .4);
+	box-shadow: 3px 3px 5px #58BC8240;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+	background:white;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background:#D2D2D2;
+	border-radius:10px;
+}
+
+.imgcontainer{
+	display:flex;
+	gap:12px;
+	max-width:500px;
+	align-items:center;
+	justify-content:flex-start;
+	background: #58BC8240;
+	box-shadow: 3px 3px 5px #58BC8240;
+	border-radius:10px;
+	scroll-snap-type: x mandatory;
+	overflow-x:scroll;
+	scroll-padding:10px;
+}
+.imgcontainer .card{
+	display:flex;
+	flex: 0 0 100%;
+	padding:20px;
+	width:350px;
+	height:100%;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-start;
+	border-radius:12px;
+	padding:30px;
+	background: #FCFBF4;
+	box-shadow: 3px 3px 5px  #242526;
+	scroll-snap-align:start;
+}
+.card .slider{
+	height:150px;
+	width:320px;
+}
+
+.slider img{
+	margin-top:10px;
+	height:100%;
+	width:150px;
+	object-fit:cover;
+	border-radius:50%;
+	border-color:#FCFBF4;
+	border:5px;
+}
+.card h3{
+	padding:3px;
+	font-size:35px; 
+	font-weight:bold; 
+	color:#656565;
+	text-shadow: 1px 1px 2px grey;
+}
+.card h2{
+	font-size:45px; 
+	font-weight:bold; 
+	color:#656565; 
+	margin-top:12px;
+	text-shadow: 1px 1px 2px grey;
+}
+.card p{
+	padding-top:10px;
+	width:100%;
+	line-height:150%;
+	letter-spacing:2px;
+	font-size: 14px;
+	color:#656565;
+}
+
+.card a{
+	text-decoration:none;
+}
+
+#end {
+	height: 100vh;
+}
+
+/* Style for the target when it's the target (i.e., when URL has #end) */
+#end:target {
+	display: block;
+}

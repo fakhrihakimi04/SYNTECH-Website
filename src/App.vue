@@ -15,6 +15,19 @@ import customCarousel from "./components/Carousel.vue";
   </div>
   <div style="height: 25px"></div>
   <customCarousel />
-
+  <div class="container">
+    <h1 class="is-size-1 has-text-weight-bold" style="color: #002661">
+      DEPARTMENTS
+    </h1>
+    <iframe src="../department.html" style="width: 1150px; height: 600px;"></iframe>
+  </div>
+  <div style="height: 25px"></div>
+  <div class="container">
+    <h1 class="is-size-1 has-text-weight-bold" style="color: #002661">
+      Mentors
+    </h1>
+    <iframe src="../mentorslider.html" style="height: 500px; width: 100%;"></iframe>
+    </div>
+  <div style="height: 25px"></div>
   <customFooter />
 </template>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="src/assets/mentorStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav
+          class="navbar is-full"
+          role="navigation"
+          aria-label="main navigation"
+          style="background-color: #fff8f8; margin: 0%; padding: 0%"
+        >
+          <div class="navbar-brand">
+            <div>
+              <img
+                src="src/assets/icons/Syntech.png"
+                height="110"
+                width="110"
+              />
+            </div>
+            <a
+              class="navbar-item is-size-1 has-text-weight-bold"
+              style="color: #002661"
+              >SYNTECH</a
+            >
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="mainNavbar"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div
+            id="mainNavbar"
+            class="navbar-menu is-full is-size-8 has-text-weight-semibold"
+          >
+            <div class="navbar-end">
+              <div class="navbar-item is-hoverable">
+                <a class="navbar-item" href="app.vue"> Home </a>
+              </div>
+
+              <div class="navbar-item is-hoverable">
+                <a class="navbar-item"> Events </a>
+              </div>
+
+              <div class="navbar-item is-hoverable">
+                <a class="navbar-item" href="../mentormain.html"> Blog </a>
+              </div>
+
+              <div class="navbar-item is-hoverable">
+                <a class="navbar-item" href="../about.html"> About Us </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="intr">
+      <div class="intro">
+        <h1>
+          WANT TO <br />
+          LEARN?
+        </h1>
+      </div>
+    </section>
+
+    <img
+      class="donutWireframe"
+      id="rotatingImage"
+      src="/src/assets/img/donutWireFrame4.png"
+      alt="RotatingImage"
+    />
+    <section class="topicslider reveal fade-bottom">
+      <div class="container">
+        <div class="slide">
+          <div
+            class="item"
+            style="background-image: url('src/assets/img/galaxmapping.jpg')"
+          >
+            <div class="content">
+              <div class="name">Star and Galaxy Mapping</div>
+              <div class="des">
+                Dive into the cosmic partnership of AI and astronomy. Learn how
+                NASA's Kepler, driven by AstroNet K2, deciphers celestial
+                signals, unveiling new exoplanets and enriching our cosmic
+                comprehension. Join the journey of technology's impact on
+                exploring distant solar realms.
+              </div>
+              <button onclick="scrollToBlogContent()">Learn More</button>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url('src/assets/img/ComputerScience.png')"
+          >
+            <div class="content">
+              <div class="name">Computer Science Will Never Be Irrelevant</div>
+              <div class="des">
+                Explore the evolution of computer science from punch cards to
+                quantum computing. Witness the relentless pursuit of faster
+                hardware, groundbreaking software, and societal impact. Join
+                pioneers navigating ethics, embracing innovation for a better
+                future. The constant discovery in computer science promises an
+                exciting digital transformation.
+              </div>
+              <button onclick="scrollToBlogContent()">Learn More</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url('src/assets/img/math.png')">
+            <div class="content">
+              <div class="name">The Vital Role of Mathematics</div>
+              <div class="des">
+                Unlock the hidden influence of mathematics in your daily
+                decisions, finances, and career. Delve into the unseen equations
+                that power our tech-driven world, revealing the essential role
+                of math in navigating modern complexities. Join us in
+                demystifying numbers and discovering their practical impact on
+                our lives.
+              </div>
+              <button onclick="scrollToBlogContent()">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttonSlider">
+          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-content" id="blog-content">
+      <div class="blogitem">
+        <div class="blog-left reveal fade-left">
+          <img src="src/assets/img/galaxmapping.jpg" />
+          <h4>Written by : Wan Aisar <br />Date : 13 Dec 2023</h4>
+        </div>
+        <div class="blog-right reveal fade-right">
+          <h1>Star and Galaxy Mapping</h1>
+          <p>
+            In the realm of astronomy, artificial intelligence (AI) has found a
+            valuable application in star and galaxy mapping. Scientists leverage
+            AI algorithms to delve into the vast amounts of astronomical data,
+            enhancing their understanding of the universe's composition and
+            structure. Through this process, AI excels at identifying intricate
+            patterns and accurately classifying celestial objects, contributing
+            to more nuanced insights. <br /><br />
+            A notable example of AI's impact in this field is NASA's Kepler
+            Telescope, which employed a Convolutional Neural Network named
+            AstroNet K2. This AI system was instrumental in predicting whether
+            signals received from Kepler's space telescope indicated a
+            transiting exoplanet or a false positive. Through the training of
+            this neural network, researchers achieved successful identification
+            of new exoplanets, significantly expanding our knowledge of
+            celestial bodies beyond our solar system.
+          </p>
+        </div>
+      </div>
+      <div class="blogitem">
+        <div class="blog-left reveal fade-left">
+          <img src="src/assets/img/ComputerScience.png" />
+          <h4>Written by : Eric Syamir <br />Date : 14 Dec 2023</h4>
+        </div>
+        <div class="blog-right reveal fade-right">
+          <h1>Computer Science Will Never Be Irrelevant</h1>
+          <p>
+            In the dynamic realm of computer science, innovation is not merely a
+            luxury but a necessity. This interdisciplinary field encompasses the
+            study of algorithms, data structures, artificial intelligence, and
+            much more, all working together to propel our technological
+            landscape forward. At its core, computer science is about
+            problem-solving and creating efficient solutions to real-world
+            challenges. From the early days of punch cards and mainframes to the
+            present era of cloud computing and machine learning, the field has
+            witnessed an unprecedented evolution. <br /><br />
+            One of the driving forces behind the rapid progress in computer
+            science is the relentless pursuit of faster and more powerful
+            hardware. Moore's Law, which observes the doubling of transistors on
+            a microchip approximately every two years, has been a guiding
+            principle in the development of processors and integrated circuits.
+            This continuous advancement in hardware capabilities has paved the
+            way for groundbreaking achievements in software development. Today,
+            computer scientists are not only concerned with building robust and
+            scalable systems but also with harnessing the potential of
+            artificial intelligence and machine learning to create intelligent
+            algorithms that can learn and adapt.
+            <br /><br />
+            The societal impact of computer science is evident in every facet of
+            our lives, from the way we communicate and work to how we access and
+            process information. The field continues to shape the future, with
+            emerging technologies like quantum computing on the horizon,
+            promising even greater computational power and capabilities. As
+            computer science permeates every industry and aspect of modern
+            living, its practitioners play a pivotal role in shaping the
+            technological landscape, addressing ethical considerations, and
+            ensuring that innovation is driven by a commitment to the betterment
+            of society. The journey of computer science is one of constant
+            discovery and adaptation, ensuring that our digital future remains
+            as exciting and transformative as ever.
+          </p>
+        </div>
+      </div>
+
+      <div class="blogitem">
+        <div class="blog-left reveal fade-left">
+          <img src="src/assets/img/math.png" />
+          <h4>Written by : Nurus Solihah <br />Date : 14 Dec 2023</h4>
+        </div>
+        <div class="blog-right reveal fade-right">
+          <h1>The Vital Role of Mathematics</h1>
+          <p>
+            Mathematics, often perceived as an abstract subject confined to
+            textbooks, is an indispensable force woven into the fabric of our
+            daily lives. Beyond its classroom origins, mathematics serves as a
+            guiding light in numerous practical aspects, fueling our financial
+            acumen, refining problem-solving skills, and steering technological
+            innovations. <br /><br />
+            In the realm of personal finance, mathematical principles govern
+            budgeting, investment decisions, and interest rate calculations.
+            These skills empower individuals to make sound financial choices,
+            shaping a secure and informed approach to money matters. Moreover,
+            mathematics instills problem-solving abilities that extend beyond
+            numerical puzzles, influencing our everyday decision-making, from
+            optimizing commutes to precise cooking measurements.
+            <br /><br />
+            As technology evolves, mathematics remains the linchpin of
+            innovation. The algorithms propelling our digital landscape,
+            securing online transactions, and advancing artificial intelligence
+            all rely on mathematical foundations. This ubiquity positions
+            mathematical expertise as a gateway to diverse career opportunities,
+            underlining its pivotal role in shaping the present and future
+            professional landscape.
+            <br /><br />
+            In essence, mathematics is not just a subject but a practical
+            toolkit that enhances our understanding of the world. From
+            unraveling the mysteries of the cosmos to informing financial
+            strategies, it equips us with the tools needed to navigate the
+            complexities of modern life, making it an integral and often unseen
+            part of our everyday existence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <img id="wireframe5" src="src/assets/img/wireframe5.1.png" />
+    <section class="mentorProfile">
+      <h2 class="reveal fade-left">OUR MENTORS</h2>
+      <div class="home-container reveal fade-bottom">
+        <div class="profile-card">
+          <div class="img">
+            <img src="src/assets/img/mentorSoli.jpeg" />
+          </div>
+          <div class="caption">
+            <h3>Nurus Solihah</h3>
+            <p>Degree in Computer Science</p>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+            <img src="src/assets/img/mentorAisar.jpeg" />
+          </div>
+          <div class="caption">
+            <h3>Wan Aisar</h3>
+            <p>Degree in Computer Science</p>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+            <img src="src/assets/img/mentorEric.jpg" />
+          </div>
+          <div class="caption">
+            <h3>Eric Syamir</h3>
+            <p>Foundation in Computer Science</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the title element by its class
+        const introTitle = document.querySelector(".intro h1");
+
+        // Store the initial left position
+        const initialLeftPosition = parseFloat(
+          getComputedStyle(introTitle).left
+        );
+
+        // Add an event listener for the 'scroll' event
+        window.addEventListener("scroll", function () {
+          // Calculate the new left position based on the scroll position
+          const scrollPosition = window.scrollY;
+          // Adjust the multiplier and the negative value for a slower transition
+          const newLeftPosition =
+            Math.max(initialLeftPosition - scrollPosition * 0.4, -500) + "px";
+
+          // Apply the new left position to the title
+          introTitle.style.left = newLeftPosition;
+        });
+      });
+
+      function scrollToBlogContent() {
+        const blogContentSection = document.getElementById("blog-content");
+        if (blogContentSection) {
+          blogContentSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+            offsetTop: 200,
+          });
+        }
+      }
+
+      let nextButton = document.querySelector(".next");
+      let prevButton = document.querySelector(".prev");
+      let slide = document.querySelector(".slide");
+      let blogItems = document.querySelectorAll(".blogitem");
+
+      let currentIndex = 0; // Initialize the current index
+
+      nextButton.addEventListener("click", function () {
+        // Move the first item to the end to simulate sliding
+        slide.appendChild(slide.firstElementChild);
+
+        // Update the current index
+        currentIndex = (currentIndex + 1) % blogItems.length;
+
+        // Update the content of the blog items based on the new first item
+        updateBlogVisibility();
+      });
+
+      prevButton.addEventListener("click", function () {
+        // Move the last item to the beginning to simulate sliding
+        slide.insertBefore(slide.lastElementChild, slide.firstElementChild);
+
+        // Update the current index
+        currentIndex = (currentIndex - 1 + blogItems.length) % blogItems.length;
+
+        // Update the content of the blog items based on the new first item
+        updateBlogVisibility();
+      });
+
+      function updateBlogVisibility() {
+        // Hide all blog items
+        blogItems.forEach((item) => (item.style.display = "none"));
+
+        // Show the corresponding blog item
+        blogItems[currentIndex].style.display = "flex";
+      }
+
+      // Initial update to show the first blog item
+      updateBlogVisibility();
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 200;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+    <footer class="footer" style="background-color: rgba(88, 188, 130, 0.1)">
+      <div class="custom">
+        <div class="custom-footer">
+          <div class="custom-footer-content">
+            <div class="custom-icons">
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+          <div class="custom-footer-content">
+            <h4>Associate with</h4>
+            <img
+              src="src/assets/icons/CIS_logo-removebg-preview.png"
+              height="110"
+              width="110"
+            />
+            <img
+              src="src/assets/icons/csd-removebg-preview.png"
+              height="110"
+              width="110"
+            />
+          </div>
+
+          <div class="custom-footer-content">
+            <h4>Department</h4>
+            <li><a href="#">Top</a></li>
+            <li><a href="#">Level</a></li>
+            <li><a href="#">Huge</a></li>
+            <li><a href="#">Action</a></li>
+          </div>
+
+          <div class="custom-footer-content">
+            <h4>Learn More</h4>
+            <li><a href="app.vue">Home</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="mentormain.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </div>
+
+          <div class="custom-footer-content">
+            <h4>Contact Us</h4>
+            <li><a href="mailto:afiqa_22001936@utp.edu.my">Secretary</a></li>
+            <li><a>Room: 02-02-03</a></li>
+          </div>
+          <div class="custom-footer-content">
+            <h4>Social</h4>
+            <li>
+              <a href="https://www.instagram.com/utpsyntech/">Instagram</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(88, 188, 130, 0.1);
+        color: black;
+      "
+    >
+      @2023 Syntech | All Rights Reserved
+    </div>
+
+    <style>
+      .custom {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .custom-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0px, auto));
+
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .custom-footer-content h4 {
+        color: black; /*change back to white if want black footer */
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+        font-weight: 550;
+      }
+
+      .custom-footer-content li {
+        margin-bottom: 16px;
+      }
+
+      .custom-footer-content li a {
+        display: block;
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all.40s ease;
+      }
+
+      .custom-footer-content li a:hover {
+        transform: translateY(-3px) translateX(-5px);
+        color: black;
+      }
+
+      .custom-icons a {
+        display: inline-block;
+        font-size: 22px;
+        color: black;
+        margin-right: 17px;
+        transition: all 0.4s ease;
+      }
+      @keyframes tonext {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: 100%;
+        }
+        98% {
+          left: 100%;
+        }
+        99% {
+          left: 0;
+        }
+      }
+
+      @keyframes tostart {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: -300%;
+        }
+        98% {
+          left: -300%;
+        }
+        99% {
+          left: 0;
+        }
+      }
+
+      @keyframes snap {
+        96% {
+          scroll-snap-align: center;
+        }
+        97% {
+          scroll-snap-align: none;
+        }
+        99% {
+          scroll-snap-align: none;
+        }
+        100% {
+          scroll-snap-align: center;
+        }
+      }
+    </style>
+  </body>
+</html>
