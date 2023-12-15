@@ -1,0 +1,89 @@
+@import url(/src/assets/css/bulma.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background 1s ease;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom , #E9EBED,#E9EBED,#f6f6f6,  rgba(88,188,130, 0.3),rgba(88,188,130, 0.4),rgba(88,188,130, 0.4),rgba(88,188,130, 0.4),rgba(88,188,130, 0.4),rgba(88,188,130, 0.4),rgba(88,188,130, 0.3), #E9EBED, #E9EBED, #E9EBED,#E9EBED);
+    background-repeat: no-repeat;
+    overflow-x: hidden !important;
+}
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: rgba(
+      88,
+      188,
+      130,
+      0.1
+    ); /* background-color: rgba(0, 119, 182, 0.1); for back to blue*/
+    border-radius: 20px;
+}
+
+.pastevents-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* Set this to your desired height */
+}
+
+.row {
+    display: flex;
+}
+
+.image-column {
+    position: relative;
+    padding: 20px;
+    flex: 33.33%;
+}
+  
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+  
+.image-column:hover .overlay {
+    opacity: 0.7; 
+}
+  
+.text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

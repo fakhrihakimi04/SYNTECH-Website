@@ -38,7 +38,7 @@
           </div>
 
           <div class="navbar-item is-hoverable">
-            <a class="navbar-item" > Events </a>
+            <a class="navbar-item" href="../eventmain.html" > Events </a>
           </div>
 
           <div class="navbar-item is-hoverable">
