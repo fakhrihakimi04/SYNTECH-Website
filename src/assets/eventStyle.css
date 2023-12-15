@@ -50,18 +50,19 @@ html {
 
 .image-column {
     position: relative;
-    padding: 20px;
-    flex: 33.33%;
+    margin: 10px;
+    border-radius: 12px;
 }
   
 .image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    border-radius: 12px;
 }
-  
-.overlay {
+
+.overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -70,6 +71,7 @@ html {
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+    border-radius: 12px;
 }
   
 .image-column:hover .overlay {
@@ -78,9 +80,20 @@ html {
   
 .text {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text2 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 92%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

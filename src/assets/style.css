@@ -174,7 +174,7 @@ input:active {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	color: #fff;
+	color: black;
 	scroll-snap-align: start;
 	background-size:cover;
 }
